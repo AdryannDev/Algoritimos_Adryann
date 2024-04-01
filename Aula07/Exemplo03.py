@@ -1,6 +1,6 @@
 frase = input("Digite uma frase: ").upper()
-qtdA = 0
-for caracterA in frase:
-    if caracterA == "A":
-        qtdA = qtdA + 1
-print(f'A quantidade de "As" é {qtdA}')
+qtd = 0
+for caracter in frase:
+    if caracter in 'AEIOUÃÕÁÉÍÓÚÀÜ':
+        qtd = qtd + 1
+print(f'A quantidade de vogais é {qtd}')
